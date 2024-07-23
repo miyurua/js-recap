@@ -12,6 +12,17 @@ banana
 pineapple
 avocado
  */
-food.forEach((item) => {
+const forEachFood = food.forEach((item) => {
   console.log(item);
 });
+
+/**
+ * Method 02 - map
+ *
+ * returns an array
+ */
+const mapFood = food.map((item, key) => {
+  return item + " " + key;
+});
+
+console.log(mapFood);
